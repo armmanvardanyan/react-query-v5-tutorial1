@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { posts } from "./data";
 
 export async function GET(request: Request) {
+  console.log(1)
   // Get the category from the URL
   const url = new URL(request.url);
   const category = url.searchParams.get("category") || "technology";
